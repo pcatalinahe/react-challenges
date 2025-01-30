@@ -46,6 +46,19 @@
   border-color:  red;
 }
 
+#reset-button {
+  color: black;
+  letter-spacing: 3px;
+  background-color: white;
+  border-color: transparent;
+  
+}
+
+#reset-button:hover {
+  color: white;
+  background-color: red;
+  border-color: black;
+}
 
 button {
   border-radius: 8px;

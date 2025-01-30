@@ -42,6 +42,9 @@ function App() {
                   ⌄
                 </button>
               </div>
+              <div>
+                <button id="reset-button" onClick={() => setCount(0)}>RESET?</button>
+                </div>
             </div>
           }
         />
