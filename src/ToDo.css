@@ -1,0 +1,229 @@
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.todo-title {
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+  color: #f9629f;
+  text-shadow: 0 0 10px rgba(100, 108, 255, 0.2);
+}
+
+.todo-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.todo-input {
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a30;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  width: 300px;
+  transition: border-color 0.25s;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #f9629f;
+  box-shadow: 0 0 5px rgba(100, 108, 255, 0.3);
+}
+
+.add-button {
+  background-color: pink;
+  color: black;
+  border: none;
+}
+
+.add-button:hover {
+  background-color: rgb(230, 169, 211);
+  color: white;
+  border-color: transparent;
+}
+
+.no-tasks-message{
+    color: #666;
+    font-size: 1.1em;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  /* font-size: 1.1em; */
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slide-in 0.3s ease-out;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.todo-item a {
+  color: #666;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: left;
+  font-size: 1.1em;
+  padding: 0 1rem;
+}
+
+.todo-item a:hover {
+  color: #f9629f;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+}
+
+.delete-button:hover {
+  background-color: #ff3333;
+  border-color: transparent;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Task Details */
+
+.task-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.task-detail-title {
+  font-size: 2.5em;
+  margin-bottom: 1.5rem;
+  color: #f9629f;
+  text-shadow: 0 0 10px rgba(100, 108, 255, 0.2);
+}
+
+.task-detail-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.task-detail-input {
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a30;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  width: 300px;
+  transition: border-color 0.25s;
+}
+
+.task-detail-input:focus {
+  outline: none;
+  border-color: #f9629f;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.save-button {
+  background-color: pink;
+  color: black;
+  border: none;
+}
+
+.save-button:hover {
+  background-color: rgb(230, 169, 211);
+  color: white;
+  border-color: transparent;
+}
+
+.back-button {
+  background-color: #666;
+  color: white;
+  border: none;
+}
+
+.back-button:hover {
+  background-color: #555;
+  border-color: transparent;
+}
+
+.task-not-found {
+  color: red;
+  font-size: 1.2em;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    background-color: #f9f9f9;
+  }
+}
